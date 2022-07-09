@@ -4,7 +4,6 @@
 
 int main(int argc, char** argv) {
     int i;
-    asetaPii();
     printf("Piin arvo: %.19Lf\n", PII);
 
     for(i = 1; i < argc; i++) {

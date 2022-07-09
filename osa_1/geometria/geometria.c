@@ -1,9 +1,7 @@
 #include "geometria.h"
 #include <math.h>
 
-void asetaPii() {
-    PII = 3.1415926535897932385L;
-}
+const long double PII = 3.1415926535897932385L;
 
 double ympyranAla(double sade) {
     return PII*pow(sade, 2);
