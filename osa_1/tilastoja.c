@@ -3,8 +3,8 @@
 
 int main(int argc, char** argv) {
 
-    double min = 0;
-    double max = 0;
+    double min = atof(argv[1]);
+    double max = atof(argv[1]);
     int i;
     int j;
     int print_once = 0;
@@ -29,10 +29,10 @@ int main(int argc, char** argv) {
 
         if(uniq_check == 0) {
             if(print_once == 0) {
-                printf("Ainutlaatuiset: ");
+                printf("Ainutlaatuiset:");
                 print_once++;
             }
-            printf("%f ", check_arg);
+            printf(" %f", check_arg);
         }
     }
 
@@ -53,7 +53,7 @@ int main(int argc, char** argv) {
     }
 
     if(max_count != 1){
-            printf("Useimmiten esiintyneet (%d kertaa): ", max_count);
+            printf("Useimmiten esiintyneet (%d kertaa):", max_count);
     }
 
     for(i = 1; i < argc; i++) {
@@ -66,7 +66,7 @@ int main(int argc, char** argv) {
             }
         }
         if(present_check == max_count && max_count != 1) {
-            printf("%f ", atof(argv[i]));
+            printf(" %f", atof(argv[i]));
             argv[i] = "\0";
         }
     }
