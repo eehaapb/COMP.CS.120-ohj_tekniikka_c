@@ -16,6 +16,7 @@ int main(int argc, char** argv) {
             k--;
         }
         flag == 0 ? printf("\"%s\": on palindromi\n", argv[i]) : printf("\"%s\": ei ole palindromi\n", argv[i]);
+        flag = 0;
     }
 
 
