@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
         }
     }
 
-    if(print_once != 0){
+    if(print_once == 1){
         printf("\n");
     }
 
@@ -71,7 +71,10 @@ int main(int argc, char** argv) {
         }
     }
 
-    printf("\n");
+
+    if(max_count != 1){
+        printf("\n");
+    }
 
     return 0;
 }
